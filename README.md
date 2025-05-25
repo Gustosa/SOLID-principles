@@ -1,4 +1,6 @@
-Os princípios de projeto _Single Responsibility_, _Open-Closed_, _Liskov Substitution_, _Interface Segregation_ e _Dependency Inversion_ (SOLID) são cinco práticas para a construção de um padrão de arquitetura de software altamente flexível e manutenível. Há outras sugestões de práticas que complementam a aplicação dos princípios SOLID, em especial, os princípios Prefira Composição a Herança e Demeter. O presente repositório ilustra alguns casos em que os princípios _Single Responsability_, _Open-Closed_, ... e ...  podem ser aplicados e os problemas que cada princício visa evitar.
+Os princípios de projeto _Single Responsibility_, _Open-Closed_, _Liskov Substitution_, _Interface Segregation_ e _Dependency Inversion_ (SOLID) são cinco práticas para a construção de um padrão de arquitetura de software altamente flexível e manutenível. Há outras sugestões de práticas que complementam a aplicação dos princípios SOLID, em especial, os princípios Prefira Composição a Herança e Demeter. 
+
+O presente repositório ilustra alguns casos em que os princípios _Single Responsability_, _Open-Closed_, ... e ...  podem ser aplicados e os problemas que cada princípio visa evitar.
 
 ---
 
