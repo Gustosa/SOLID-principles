@@ -5,10 +5,11 @@ Os princípios de projeto _Single Responsibility_, _Open-Closed_, _Liskov Substi
 ## Single Responsability
 O princípo _Single Responsability_ sugere que, a um módulo, deve ser atribuída uma única responsabilidade. No exemplo abaixo, os métodos da classe [`Passarinho`](code/passarinho.cpp) são responsáveis apenas pelas ações andar, emitir som e voar, respectivamente. 
 
-`class Passarinho : public Animal {
+```cpp
+class Passarinho : public Animal { 
     string nome;
     string dataNasc;
-
+    
     void andar() override {
         cout << "Andando..." << endl;
     }
@@ -20,18 +21,21 @@ O princípo _Single Responsability_ sugere que, a um módulo, deve ser atribuíd
     void voar() {
         cout << "Asas batendo..." << endl;
     }
-};`
+};
+```
 
 Desse modo, sempre que for necessário alterar algum comportamento da classe `Passarinho`, será necessário alterar apenas o método associado àquele comportamento.
 
 ## Open-Closed
 O princípio _Open-Closed_ sugere que módulos devem ser extensíveis, mas não alteráveis, ou seja, um módulo deve ser aberto para extensões de sua funcionalidade sem comprometer o módulo. No exemplo abaixo, a classe [`Animal`](code/animal.hpp) foi extendida pela classe [`Passarinho`](code/passarinho.cpp), porém, `Animal` não precisa de modificações para que `Passariho` seja implementado.
 
-`class Animal {
+```cpp
+class Animal {
     void andar() {
         // lógica para andar
     }
     void som() {
         // lógica para emitir som
     }
-};`
+};
+```
